@@ -13,7 +13,7 @@ const app = express()
 app.use(cors())
 app.use(bodyParser.json())
 
-app.use('/users', require('./routes/users'))
+app.use('api/users', require('./routes/users'))
 
 app.listen(process.env.PORT, () => {
   console.log(`App running on port ${process.env.PORT}`)
