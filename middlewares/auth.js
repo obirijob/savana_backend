@@ -22,7 +22,7 @@ module.exports = async function (req, res, next) {
         return res.status(404).json('user not found!')
       }
     } else {
-      return res.status(500).json('Bad Payload')
+      return res.status(500).json('Bad Payloads')
     }
   } catch (err) {
     return res.status(500).json(err)
